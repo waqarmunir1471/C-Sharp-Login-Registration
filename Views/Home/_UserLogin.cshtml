@@ -1,0 +1,23 @@
+@model UserLogin
+
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>Login</h2>
+            <form asp-action="Login" class="form-group">
+                <span asp-asp-validation-for="summary"></span>
+                <p>
+                    <p><span asp-validation-for="LoginEmail" class="text-danger"></span></p>
+                    <label asp-for="LoginEmail"></label>
+                    <input asp-for="LoginEmail" class="form-control" />
+                </p>
+                <p>
+                    <p><span asp-validation-for="LoginPassword" class="text-danger"></span></p>
+                    <label asp-for="LoginPassword"></label>
+                    <input asp-for="LoginPassword" class="form-control" />
+                </p>
+                <p>
+                    <input type="submit" class="btn btn-primary" value="Login"/>
+                </p>
+            </form>
+        </div>
+    </div>
